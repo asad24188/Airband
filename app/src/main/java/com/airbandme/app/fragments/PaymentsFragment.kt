@@ -16,7 +16,7 @@ class PaymentsFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_payments, container, false)
+        return inflater.inflate(R.layout.payments_layout, container, false)
     }
 
 }

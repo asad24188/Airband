@@ -15,7 +15,7 @@ class PlanFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_plan, container, false)
+        return inflater.inflate(R.layout.plan_fragment, container, false)
     }
 
 }
