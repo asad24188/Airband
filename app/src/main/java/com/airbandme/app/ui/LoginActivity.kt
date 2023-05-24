@@ -3,6 +3,8 @@ package com.airbandme.app.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
+import com.airbandme.app.MainActivity
 import com.airbandme.app.base.BaseActivity
 import com.airbandme.app.databinding.ActivityLoginBinding
 import com.airbandme.app.ui.auth.ForgotPasswordActivity
@@ -19,9 +21,15 @@ class LoginActivity : BaseActivity() {
 
         initt()
         clicks()
+
     }
 
-    private fun initt() {}
+    private fun initt() {
+
+        binding.tvLogin.setOnClickListener { startActivity(Intent(context, MainActivity::class.java))}
+    }
+
+
 
     private fun clicks() {
         binding.tvForgotPassword.setOnClickListener { startActivity(Intent(context,ForgotPasswordActivity::class.java)) }
