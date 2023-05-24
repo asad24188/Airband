@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Airband</string>
+
+
+    <string name="OK">OK</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="YES">YES</string>
+    <string name="NO">NO</string>
+    <string name="LOGOUT">LOGOUT</string>
+    <string name="LOGOUT_ALERT_MESSAGE">Are you sure you want to logout ?</string>
+    <string name="PHONE_NUMBER_IS_EMPTY">Phone number is empty</string>
+    <string name="INVALID_EMAIL">INAVALID EMAIL</string>
+    <string name="INVALID_OTP">INVALID OTP</string>
+    <string name="welcome_back">Welcome back! Glad to see you, Again!</string>
+    <string name="msg_forgot_password">Forgot Password?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

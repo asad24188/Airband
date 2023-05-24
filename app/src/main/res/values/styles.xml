@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="ScreenTitle">
+        <item name="android:textSize">@dimen/_22sdp</item>
+        <item name="android:textColor">@color/app_pink_secondry</item>
+        <item name="android:fontFamily">@font/gilroy_font_bold</item>
+        <item name="android:fontWeight" tools:targetApi="p">700</item>
+        <item name="android:layout_marginTop">@dimen/_30sdp</item>
+    </style>
+
+    <style name="ScreenDescription">
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/app_gray</item>
+        <item name="android:fontFamily">@font/gilroy_font_light</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+    </style>
+
+</resources>
