@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_15sdp"
+    android:background="@drawable/plan_bg"
+    android:padding="@dimen/_15sdp">
+
+    <TextView
+        android:id="@+id/planTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_font_bold"
+        android:text="SmartHome Lite"
+        android:textColor="@color/app_gray"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/planDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_font_light"
+        android:text="Unlimited Download Speed,\nUpto 43/43Mbps, 24 hours."
+        android:textSize="@dimen/_10sdp"
+        android:lineSpacingExtra="@dimen/_2sdp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planTitle" />
+
+    <TextView
+        android:id="@+id/planPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_font_light"
+        android:text="NGN 21,454.00 / month"
+        android:textSize="@dimen/_10sdp"
+        android:lineSpacingExtra="@dimen/_2sdp"
+        android:textStyle="bold"
+        android:textColor="@color/app_gray"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planDetail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
