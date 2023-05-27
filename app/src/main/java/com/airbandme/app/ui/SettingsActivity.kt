@@ -1,20 +1,20 @@
 package com.airbandme.app.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.airbandme.app.base.BaseActivity
 import com.airbandme.app.R
-import com.airbandme.app.databinding.ActivityChangePasswordBinding
+import com.airbandme.app.base.BaseActivity
 import com.airbandme.app.databinding.ActivitySettingsBinding
+import com.airbandme.app.databinding.ActivitySplashBinding
 
+class SettingsActivity : BaseActivity() {
 
-class ChangePasswordActivity : BaseActivity() {
-
-    lateinit var binding: ActivityChangePasswordBinding
+    lateinit var binding: ActivitySettingsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityChangePasswordBinding.inflate(layoutInflater)
+        binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         clicks()
@@ -23,5 +23,8 @@ class ChangePasswordActivity : BaseActivity() {
     private fun clicks() {
 
         binding.ivBack.setOnClickListener { finish() }
+        binding.changePassword.setOnClickListener {
+            startActivity(Intent(context,ChangePasswordActivity::class.java))
+        }
     }
 }

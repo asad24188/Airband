@@ -20,9 +20,9 @@
     </fragment>
     <fragment
         android:id="@+id/paymentsFragment"
-        android:name="com.airbandme.app.fragments.PaymentsFragment"
+        android:name="com.airbandme.app.fragments.PaymentFragment"
         android:label="fragment_payments"
-        tools:layout="@layout/fragment_payments" >
+        tools:layout="@layout/fragment_payment" >
     </fragment>
     <fragment
         android:id="@+id/noticeFragment"
