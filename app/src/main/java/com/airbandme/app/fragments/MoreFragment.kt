@@ -7,9 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.airbandme.app.R
+import com.airbandme.app.adapters.UsageHistoryAdapter
 import com.airbandme.app.databinding.FragmentMoreBinding
+import com.airbandme.app.models.UsageHistory
 import com.airbandme.app.ui.AccountInformationActivity
+import com.airbandme.app.ui.DataUsageActivity
 import com.airbandme.app.ui.SettingsActivity
+import com.airbandme.app.ui.TransactionRecieptsActivity
 import com.fizall.app.base.BaseFragment
 
 
@@ -29,6 +33,12 @@ class MoreFragment : BaseFragment() {
         }
         binding.settings.setOnClickListener {
             startActivity(Intent(context,SettingsActivity::class.java))
+        }
+        binding.usageHistory.setOnClickListener {
+            startActivity(Intent(context,DataUsageActivity::class.java))
+        }
+        binding.transactionReciept.setOnClickListener {
+            startActivity(Intent(context,TransactionRecieptsActivity::class.java))
         }
 
     }
